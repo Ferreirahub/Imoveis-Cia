@@ -326,7 +326,7 @@ header{
     margin-bottom: 1rem;
 }
 
-iframe{
+.map-container iframe{
     width: 80%;
     height: 500px;
 }
@@ -585,4 +585,5 @@ footer{
     }
 
 }
+
 

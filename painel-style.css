@@ -175,9 +175,11 @@ footer{
     }
 
 }
+
 @media (max-width: 442px){
     #footer_content{
         grid-template-columns: 1fr;
         padding: 3rem 2rem;
     }
 }
+

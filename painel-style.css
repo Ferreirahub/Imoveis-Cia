@@ -1,0 +1,176 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Barra de Navegação */
+.navbar {
+    background: #003366; /* Azul escuro profissional */
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-logout {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: white;
+    color: #003366;
+}
+
+/* Área Principal */
+.main-content {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.welcome-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.client-name {
+    color: #007bff; /* Azul de destaque */
+}
+
+/* Grid System */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Estilo dos Cards */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: #003366;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+}
+
+/* Barra de Progresso */
+.progress-container {
+    background: #eee;
+    height: 12px;
+    border-radius: 10px;
+    margin: 1.5rem 0 0.5rem 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #28a745; /* Verde Sucesso */
+    height: 100%;
+    transition: width 1s ease-in-out;
+}
+
+.status-text strong {
+    color: #28a745;
+}
+
+/* Listas de Documentos */
+.docs-list {
+    list-style: none;
+}
+
+.docs-list li {
+    margin-bottom: 15px;
+}
+
+.docs-list a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.docs-list a:hover {
+    text-decoration: underline;
+}
+
+/* Detalhes do Imóvel */
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.info-item span {
+    color: #666;
+}
+
+footer{
+    width: 100%;
+    color: white;
+    background: #003366;
+}
+
+#footer_content{
+    background: var(--main-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+
+#footer_content a{
+    color: rgb(255, 255, 255);
+}
+
+#footer_content a:hover{
+    color: #007bff;
+    transition: .4s;
+    text-decoration: underline;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background: var(--main-color);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 600px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}

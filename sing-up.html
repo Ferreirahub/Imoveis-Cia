@@ -8,6 +8,7 @@
     <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script data-memberstack-app="app_cmjhlrsso00080sta7tw2hfrj" src="https://static.memberstack.com/scripts/v2/memberstack.js" type="text/javascript"></script>
     <title>Crie uma conta</title>
 </head>
 <body>
@@ -28,17 +29,18 @@
             <h2>Bem vindo, crie uma conta para continuar</h2>
             <p>Já tem uma conta? <a href="login.html">Login</a></p>
 
-            <form action="">
+            <form data-ms-form="signup" data-ms-plan:add="pln_acesso-cliente-0dn0xe5">
                 <span>Nome Completo</span>
-                <input type="name" name="" id="" placeholder="Insira seu nome completo" required>
+                <input type="text" name="name" id="name" placeholder="Insira seu nome completo" data-ms-member="first-name" required>
                 <span>Insira seu email</span>
-                <input type="email" name="email" id="email-box" placeholder="Insira seu email" required>
+                <input type="email" name="email" id="email-box" placeholder="Insira seu email" data-ms-member="email" required>
                 <span>Insira seu telefone</span>
-                <input type="phone" name="phone" id="phone-box" placeholder="Insira seu telefone" required>
+                <input type="phone" name="phone" id="phone-box" placeholder="Insira seu telefone" data-ms-member="phone" required>
                 <span>Crie uma senha</span>
-                <input type="password" name="password" id="password-box" placeholder="Insira uma senha segura" required>
+                <input type="password" name="password" id="password-box" placeholder="Insira uma senha segura" data-ms-member="password" required>
                 <input type="submit" value="Cadastrar" class="buttom">
                 <a href="login.html">Já tenho uma conta</a>
+                
             </form>
             <a href="login.html" class="btn">Login</a>
         </div>
@@ -83,6 +85,7 @@
 </body>
 
 </html>
+
 
 
 
